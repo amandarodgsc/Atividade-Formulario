@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Bootstrap 5.3.3</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Inclua o CSS do Bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Meu Projeto</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Formulário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabela.html">Tabela</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Conteúdo -->
+    <div class="container mt-5">
+        <h2>Tabela de Usuários</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>João Silva</td>
+                    <td>joao.silva@example.com</td>
+                    <td>
+                        <button class="btn btn-info btn-sm">Editar</button>
+                        <button class="btn btn-danger btn-sm">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Maria Oliveira</td>
+                    <td>maria.oliveira@example.com</td>
+                    <td>
+                        <button class="btn btn-info btn-sm">Editar</button>
+                        <button class="btn btn-danger btn-sm">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
