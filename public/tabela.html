@@ -1,64 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela com Bootstrap 5.3.3</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Inclua o CSS do Bootstrap -->
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Tabela de Contatos</title>
+    <!-- Link do CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Meu Projeto</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Formulário</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tabela.html">Tabela</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <!-- Conteúdo -->
-    <div class="container mt-5">
-        <h2>Tabela de Usuários</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>João Silva</td>
-                    <td>joao.silva@example.com</td>
-                    <td>
-                        <button class="btn btn-info btn-sm">Editar</button>
-                        <button class="btn btn-danger btn-sm">Excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Maria Oliveira</td>
-                    <td>maria.oliveira@example.com</td>
-                    <td>
-                        <button class="btn btn-info btn-sm">Editar</button>
-                        <button class="btn btn-danger btn-sm">Excluir</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Tabela de Contatos</h2>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>CEP</th>
+                <th>UF</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Paulo</td>
+                <td>061900000001</td>
+                <td>joao@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>Maria João</td>
+                <td>061900000002</td>
+                <td>maria@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>Ronaldo João</td>
+                <td>061900000003</td>
+                <td>ronaldo@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>Pedro João</td>
+                <td>061900000004</td>
+                <td>pedro@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>João João</td>
+                <td>061900000005</td>
+                <td>joao@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="text-center">Lista de Contatos</p>
+</div>
+
+<!-- Link do JavaScript do Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
